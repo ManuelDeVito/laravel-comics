@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::get('/', function () {
+    return view('welcome');
+})->name('page-welcome');
+
+
 Route::get('/comics', function () {
     $array_comics = config('comics');
 

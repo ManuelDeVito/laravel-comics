@@ -1,0 +1,103 @@
+.header-top {
+    background-color: $page_color;
+
+    ul {
+        list-style-type: none;
+        text-align: right;
+
+
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+
+
+            &:last-child {
+                margin-left: $font_weight * 5;
+            }
+
+
+            a {
+                display: inline-block;
+                font-size: 12px;
+                font-weight: 600;
+                color: white;
+                padding: $font_weight - 5 0;
+
+            }
+        }
+    }
+}
+
+.header-bottom {
+    border-bottom: 1px solid #ebebeb;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo-brand {
+        width: 10%;
+        height: $font_weight * 8;
+
+        a {
+            display: inline-block;
+            height: 100%;
+
+            img {
+                height: 100%;
+            }
+        }
+
+
+    }
+
+    .menu {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin: 0 $font_weight;
+
+                a {
+                    display: inline-block;
+                    color: $menu_text_color;
+                    font-family: $title_font;
+                    font-size: $font_weight * 2;
+                    line-height: 113px;
+
+
+                    &.active, &:hover {
+                        color: $page_color;
+                        border-bottom: $font_weight - 5 solid $page_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+
+    .input-search {
+        border-bottom: 3px solid $page_color;
+
+        input {
+            width: $font_weight * 15;
+            border: none;
+            font-size: $font_weight * 2;
+            text-align: right;
+        }
+    }
+}

@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: $text_font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title_font;
+}
+
 .contenitore {
-    width: 1300px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -13,4 +21,8 @@
     content: '';
     display: table;
     clear: both;
+}
+
+a {
+    text-decoration: none;
 }

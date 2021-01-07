@@ -1,0 +1,38 @@
+.contenitore-icon {
+    background-color: $page_color;
+    color: $text_color;
+}
+
+.icon {
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin: 0 39px;
+
+            a{
+                display: inline-block;
+                color: $text_color;
+                line-height: $font_weight * 15;
+
+                img {
+                    display: inline-block;
+                    height: $font_weight * 5;
+                    max-width: $font_weight * 5;
+                    vertical-align: middle;
+                }
+
+                span {
+                    display: inline-block;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-left: $font_weight;
+                    font-family: $text_font;
+                }
+            }
+        }
+    }
+}
