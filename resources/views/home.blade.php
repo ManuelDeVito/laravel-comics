@@ -10,15 +10,17 @@
             <h2>Current Series</h2>
         </div>
         <div class="contenitore-card">
-            @foreach ($series as $elemento_corrente)
+            @foreach ($series as $key => $elemento_corrente)
                 <div class="card">
-                    <div class="img-card">
-                        <img src="{{ $elemento_corrente['thumb'] }}"
-                        alt="{{ $elemento_corrente['series'] }}">
-                    </div>
-                    <div class="titolo">
-                        <span>{{ $elemento_corrente['series'] }}</span>
-                    </div>
+                    <a href="{{ route('single-comic', ['id' => $key]) }}">
+                        <div class="img-card">
+                            <img src="{{ $elemento_corrente['thumb'] }}"
+                            alt="{{ $elemento_corrente['series'] }}">
+                        </div>
+                        <div class="titolo">
+                            <span>{{ $elemento_corrente['series'] }}</span>
+                        </div>
+                    </a>
                 </div>
             @endforeach
         </div>
@@ -34,4 +36,4 @@
 
 @endsection
 
-@section('page-title', 'Laravel-Comics - Home')
+@section('page-title', 'Home - Laravel-Comics')
