@@ -43,7 +43,7 @@
     }
 }
 
-.sezione-text-comic {
+#sezione-text-comic {
 
     .contenitore-text-img {
         display: flex;
@@ -114,6 +114,172 @@
         .comic-description {
             color: $menu_text_color;
             line-height: 1.8;
+        }
+    }
+}
+
+#sezione-artisti {
+    background-color: $backgroud_color_artist;
+
+    .contenitore-sezione-artisti {
+        display: flex;
+
+
+        .margin {
+            margin-right: $font_weight * 4;
+        }
+
+        .sezione-artisti-left, .sezione-artisti-right  {
+            width: 50%;
+            padding: $font_weight * 3 0 $font_weight * 7 0;
+
+
+            h2 {
+                color: $color_title_comic;
+                font-size: $font_weight * 2 + 6;
+                padding-bottom: $font_weight * 2;
+
+            }
+
+            ul {
+
+                list-style-type: none;
+
+                .riga {
+                    border-bottom: 1px solid $color_riga;
+                }
+
+                li {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    border-top: 1px solid $color_riga;
+                    padding: $font_weight 0;
+
+                    span:first-child {
+                        min-width: calc(100% / 3);
+                        max-width: calc(100% / 3);
+                        flex-grow: 1;
+                        color: $color_title_comic;
+                    }
+
+                    span:last-child {
+                        flex-grow: 2;
+                    }
+
+                    a {
+                        color: $color_text_img;
+                    }
+
+                    .name-series {
+                        text-transform: uppercase;
+                        color: $color_text_img;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .sezione-contenitore-blocchi {
+        border-top: 1px solid $color_riga;
+    }
+    .contenitore-blocchi {
+        display: flex;
+
+        .blocchi {
+            border-left: 1px solid $color_riga;
+            border-right: 1px solid $color_riga;
+            width: 25%;
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: $font_weight;
+
+                .text-icon {
+                    color: $color_text_icon;
+                    text-transform: uppercase;
+                    font-family: $title_font;
+                    font-size: $font_weight + 4;
+
+                    &:hover {
+                        color: $color_text_icon_hover;
+                    }
+                }
+
+                .icon {
+                    background-image: url('/images/cta-icons.png');
+                    width: $icon_size;
+                    height: $icon_size;
+                    display: inline-block;
+                }
+            }
+
+            &:hover {
+                background-color: $backgroud_color_blocco_hover;
+            }
+
+            &:first-child {
+
+                .icon {
+                    background-position: 0 0;
+                }
+
+                &:hover .icon {
+                    background-position: 0 $icon_size;
+                }
+            }
+
+            &:nth-child(2) {
+
+                .icon {
+                    background-position: $icon_size 0;
+                }
+
+                &:hover .icon {
+                    background-position: $icon_size $icon_size;
+                }
+            }
+
+            &:nth-child(3) {
+
+                .icon {
+                    background-position: $icon_size * 2 0;
+                }
+
+                &:hover .icon {
+                    background-position: $icon_size * 2 $icon_size;
+                }
+            }
+
+            &:nth-child(4) {
+
+                .icon {
+                    background-position: $icon_size * 3 0;
+                }
+
+                &:hover .icon {
+                    background-position: $icon_size * 3 $icon_size;
+                }
+            }
+
+            // Soluzione con il ciclo for
+
+            // @for $i from 0 through 3 {
+            //
+            //     &:nth-child(#{$i + 1}) {
+            //
+            //         .icon {
+            //             background-position: $icon_size * $i 0;
+            //         }
+            //
+            //         &:hover .icon {
+            //             background-position: $icon_size * $i $icon_size;
+            //         }
+            //     }
+            // }
         }
     }
 }

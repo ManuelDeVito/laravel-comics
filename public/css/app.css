@@ -286,24 +286,24 @@ a {
   display: block;
 }
 
-.sezione-text-comic .contenitore-text-img {
+#sezione-text-comic .contenitore-text-img {
   display: flex;
   padding: 60px 0;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left {
+#sezione-text-comic .contenitore-text-img .contenitore-left {
   width: 70%;
   padding-right: 40px;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left h1 {
+#sezione-text-comic .contenitore-text-img .contenitore-left h1 {
   color: #003f5e;
   font-size: 30px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price {
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price {
   display: flex;
   justify-content: space-between;
   background-color: #55ba59;
@@ -311,42 +311,42 @@ a {
   margin-bottom: 15px;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price,
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .available,
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .check {
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price,
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .available,
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .check {
   padding: 15px;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price {
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price {
   flex-grow: 1;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price .us-price {
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price .us-price {
   color: #bafd9c;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price .comic-price {
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price .comic-price {
   color: #FFFFFF;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .available {
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .available {
   border-right: 1px solid #357739;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .available .comic-available {
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .available .comic-available {
   text-transform: uppercase;
   color: #bafd9c;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .check-availability {
+#sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .check-availability {
   color: #FFFFFF;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-right {
+#sezione-text-comic .contenitore-text-img .contenitore-right {
   width: 30%;
 }
 
-.sezione-text-comic .contenitore-text-img .contenitore-right h5 {
+#sezione-text-comic .contenitore-text-img .contenitore-right h5 {
   font-size: 19px;
   text-transform: uppercase;
   color: #464646;
@@ -354,9 +354,152 @@ a {
   padding-right: 6px;
 }
 
-.sezione-text-comic .contenitore-text-img .comic-description {
+#sezione-text-comic .contenitore-text-img .comic-description {
   color: #464646;
   line-height: 1.8;
+}
+
+#sezione-artisti {
+  background-color: #f6f6f6;
+}
+
+#sezione-artisti .contenitore-sezione-artisti {
+  display: flex;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .margin {
+  margin-right: 40px;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-left,
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-right {
+  width: 50%;
+  padding: 30px 0 70px 0;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-left h2,
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-right h2 {
+  color: #003f5e;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-left ul,
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-right ul {
+  list-style-type: none;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-left ul .riga,
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-right ul .riga {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-left ul li,
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-right ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 1px solid #e3e3e3;
+  padding: 10px 0;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-left ul li span:first-child,
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-right ul li span:first-child {
+  min-width: calc(100% / 3);
+  max-width: calc(100% / 3);
+  flex-grow: 1;
+  color: #003f5e;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-left ul li span:last-child,
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-right ul li span:last-child {
+  flex-grow: 2;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-left ul li a,
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-right ul li a {
+  color: #00a9d9;
+}
+
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-left ul li .name-series,
+#sezione-artisti .contenitore-sezione-artisti .sezione-artisti-right ul li .name-series {
+  text-transform: uppercase;
+  color: #00a9d9;
+}
+
+#sezione-artisti .sezione-contenitore-blocchi {
+  border-top: 1px solid #e3e3e3;
+}
+
+#sezione-artisti .contenitore-blocchi {
+  display: flex;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi {
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  width: 25%;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi a .text-icon {
+  color: #a7a7a7;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi a .text-icon:hover {
+  color: #0d374a;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi a .icon {
+  background-image: url("/images/cta-icons.png");
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi:hover {
+  background-color: #E9E9E9;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi:first-child .icon {
+  background-position: 0 0;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi:first-child:hover .icon {
+  background-position: 0 37px;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi:nth-child(2) .icon {
+  background-position: 37px 0;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi:nth-child(2):hover .icon {
+  background-position: 37px 37px;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi:nth-child(3) .icon {
+  background-position: 74px 0;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi:nth-child(3):hover .icon {
+  background-position: 74px 37px;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi:nth-child(4) .icon {
+  background-position: 111px 0;
+}
+
+#sezione-artisti .contenitore-blocchi .blocchi:nth-child(4):hover .icon {
+  background-position: 111px 37px;
 }
 
 #sezione-footer-top {
