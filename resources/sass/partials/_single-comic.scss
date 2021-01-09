@@ -1,0 +1,119 @@
+#sezione-single-comic {
+    background-color: $page_color;
+    padding-top: $font_weight * 8;
+}
+
+.small-contenitore {
+    width: 1020px;
+    margin: auto;
+}
+
+.sezione-contenitore-single {
+    position: relative;
+
+    .contenitore-img-thumb {
+        position: absolute;
+        bottom: $font_weight * 2;
+        border: 1px solid $text_color;
+
+        span {
+            position: absolute;
+            background-color: $color_text_img;
+            color: $text_color;
+            text-transform: uppercase;
+            padding: 1px 7px;
+            font-size: $font_weight + 2;
+
+            &.type {
+                top: 0;
+                left: 0;
+            }
+
+            &.gallery {
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+        }
+
+        img {
+            display: block;
+        }
+    }
+}
+
+.sezione-text-comic {
+
+    .contenitore-text-img {
+        display: flex;
+        padding: $font_weight * 6 0;
+
+        .contenitore-left {
+            width: 70%;
+            padding-right: $font_weight * 4;
+
+            h1 {
+                color: $color_title_comic;
+                font-size: $font_weight * 3;
+                margin-bottom: $font_weight * 2;
+                text-transform: uppercase;
+            }
+
+            .contenitore-price {
+                display: flex;
+                justify-content: space-between;
+                background-color: $backgroud_color_price;
+                border: 1px solid $border_color;
+                margin-bottom: $font_weight + 5;
+
+                .price, .available, .check {
+                    padding: $font_weight + 5;
+                }
+
+                .price {
+                    flex-grow: 1;
+
+                    .us-price {
+                        color: $color_text_price;
+                    }
+
+                    .comic-price {
+                        color: $text_color;
+                    }
+                }
+
+                .available {
+                    border-right: 1px solid $border_color;
+
+                    .comic-available {
+                        text-transform: uppercase;
+                        color: $color_text_price;
+                    }
+
+                }
+
+                .check-availability {
+                    color: $text_color;
+                }
+            }
+        }
+
+        .contenitore-right {
+            width: 30%;
+
+            h5 {
+                font-size: $font_weight + 9;
+                text-transform: uppercase;
+                color: $menu_text_color;
+                text-align: right;
+                padding-right: $font_weight - 4;
+            }
+        }
+
+        .comic-description {
+            color: $color_li;
+            line-height: 1.8;
+        }
+    }
+}

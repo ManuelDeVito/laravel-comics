@@ -18,6 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 })->name('page-welcome');
 
+
+Route::get('/comics', function () {
+    $array_comics = config('comics');
+
+        $data = [
+            'series' => $array_comics
+        ];
+
+    return view('home', $data);
+});
+
 Route::get('/single/{id}', function ($id) {
     $array_comics = config('comics');
 
@@ -33,14 +44,3 @@ Route::get('/single/{id}', function ($id) {
     }
     abort(404);
 })->name('single-comic');
-
-
-Route::get('/comics', function () {
-    $array_comics = config('comics');
-
-        $data = [
-            'series' => $array_comics
-        ];
-
-    return view('home', $data);
-});

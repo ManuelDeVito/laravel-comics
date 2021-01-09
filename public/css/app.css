@@ -241,6 +241,124 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
+#sezione-single-comic {
+  background-color: #0282f9;
+  padding-top: 80px;
+}
+
+.small-contenitore {
+  width: 1020px;
+  margin: auto;
+}
+
+.sezione-contenitore-single {
+  position: relative;
+}
+
+.sezione-contenitore-single .contenitore-img-thumb {
+  position: absolute;
+  bottom: 20px;
+  border: 1px solid #FFFFFF;
+}
+
+.sezione-contenitore-single .contenitore-img-thumb span {
+  position: absolute;
+  background-color: #00a9d9;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 1px 7px;
+  font-size: 12px;
+}
+
+.sezione-contenitore-single .contenitore-img-thumb span.type {
+  top: 0;
+  left: 0;
+}
+
+.sezione-contenitore-single .contenitore-img-thumb span.gallery {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.sezione-contenitore-single .contenitore-img-thumb img {
+  display: block;
+}
+
+.sezione-text-comic .contenitore-text-img {
+  display: flex;
+  padding: 60px 0;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left {
+  width: 70%;
+  padding-right: 40px;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left h1 {
+  color: #003f5e;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price {
+  display: flex;
+  justify-content: space-between;
+  background-color: #55ba59;
+  border: 1px solid #357739;
+  margin-bottom: 15px;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price,
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .available,
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .check {
+  padding: 15px;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price {
+  flex-grow: 1;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price .us-price {
+  color: #bafd9c;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .price .comic-price {
+  color: #FFFFFF;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .available {
+  border-right: 1px solid #357739;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .available .comic-available {
+  text-transform: uppercase;
+  color: #bafd9c;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-left .contenitore-price .check-availability {
+  color: #FFFFFF;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-right {
+  width: 30%;
+}
+
+.sezione-text-comic .contenitore-text-img .contenitore-right h5 {
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #464646;
+  text-align: right;
+  padding-right: 6px;
+}
+
+.sezione-text-comic .contenitore-text-img .comic-description {
+  color: #959595;
+  line-height: 1.8;
+}
+
 #sezione-footer-top {
   background-image: url("/images/footer-bg.jpg");
   background-size: cover;
