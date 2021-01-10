@@ -20,7 +20,7 @@
             position: absolute;
             background-color: $color_text_img;
             color: $text_color;
-            text-transform: uppercase;
+            text-transform: $font_trasform;
             padding: 1px 7px;
             font-size: $font_weight + 2;
 
@@ -57,7 +57,7 @@
                 color: $color_title_comic;
                 font-size: $font_weight * 3;
                 margin-bottom: $font_weight * 2;
-                text-transform: uppercase;
+                text-transform: $font_trasform;
             }
 
             .contenitore-price {
@@ -87,7 +87,7 @@
                     border-right: 1px solid $border_color;
 
                     .comic-available {
-                        text-transform: uppercase;
+                        text-transform: $font_trasform;
                         color: $color_text_price;
                     }
 
@@ -104,7 +104,7 @@
 
             h5 {
                 font-size: $font_weight + 9;
-                text-transform: uppercase;
+                text-transform: $font_trasform;
                 color: $menu_text_color;
                 text-align: right;
                 padding-right: $font_weight - 4;
@@ -172,7 +172,7 @@
                     }
 
                     .name-series {
-                        text-transform: uppercase;
+                        text-transform: $font_trasform;
                         color: $color_text_img;
                     }
                 }
@@ -200,7 +200,7 @@
 
                 .text-icon {
                     color: $color_text_icon;
-                    text-transform: uppercase;
+                    text-transform: $font_trasform;
                     font-family: $title_font;
                     font-size: $font_weight + 4;
 

@@ -74,7 +74,7 @@
                     font-weight: bold;
                     padding: $font_weight;
                     border: 2px solid $page_color;
-                    text-transform: uppercase;
+                    text-transform: $font_trasform;
 
 
                     &:hover {
@@ -99,7 +99,7 @@
                     h2 {
                         color: $page_color;
                         font-size: $font_weight * 2;
-                        text-transform: uppercase;
+                        text-transform: $font_trasform;
                         margin: 0 $font_weight + 5 $font_weight 0;
                     }
 
@@ -127,8 +127,8 @@
 
                                 a {
                                     display: inline-block;
-                                    width: 35px;
-                                    height: 35px;
+                                    width: $font_weight * 3 + 5;
+                                    height: $font_weight * 3 + 5;
                                 }
                         }
                 }

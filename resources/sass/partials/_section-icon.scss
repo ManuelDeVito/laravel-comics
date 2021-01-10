@@ -26,7 +26,7 @@
 
                 span {
                     display: inline-block;
-                    text-transform: uppercase;
+                    text-transform: $font_trasform;
                     font-size: 14px;
                     font-weight: bold;
                     margin-left: $font_weight;

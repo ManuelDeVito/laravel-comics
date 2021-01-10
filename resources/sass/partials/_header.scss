@@ -8,7 +8,7 @@
 
         li {
             display: inline-block;
-            text-transform: uppercase;
+            text-transform: $font_trasform;
 
 
             &:last-child {
@@ -18,7 +18,7 @@
 
             a {
                 display: inline-block;
-                font-size: 12px;
+                font-size: $font_weight + 2;
                 font-weight: 600;
                 color: white;
                 padding: $font_weight - 5 0;
